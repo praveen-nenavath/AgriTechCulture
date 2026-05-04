@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AgriTechCulture — Smart Farming Platform</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════ NAVBAR ═══════════════ -->
+<nav class="navbar navbar-expand-lg" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">🌿 Agri<span>Tech</span>Culture</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="#crop-manager">My Crops</a></li>
+        <li class="nav-item"><a class="nav-link" href="#weather">Weather</a></li>
+        <li class="nav-item"><a class="nav-link" href="#guide">Cultivation Guide</a></li>
+        <li class="nav-item"><a class="nav-link" href="#marketplace">Marketplace</a></li>
+        <li class="nav-item"><a class="nav-link" href="#calculator">Profit</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tips">Tips</a></li>
+        <li class="nav-item ms-2"><a class="nav-link btn-nav" href="#crop-manager">Get Started</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-grain"></div>
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="hero-badge">🌾 Smart Farming Platform</div>
+        <h1 class="hero-title">Farm <span class="accent">Smarter,</span><br>Harvest <span class="accent">Bigger.</span></h1>
+        <p class="hero-sub">AgriTechCulture gives you AI-powered crop management, real-time weather intelligence, full cultivation guidance from seed to sale — and a marketplace to grow your profit.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#crop-manager" class="btn-hero">🌱 Start a Crop Session <i class="fas fa-arrow-right"></i></a>
+          <a href="#guide" class="btn-hero-outline">View Cultivation Guide</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><h3>12K+</h3><p>Active Farmers</p></div>
+          <div class="stat-item"><h3>98%</h3><p>Yield Accuracy</p></div>
+          <div class="stat-item"><h3>₹2.4Cr</h3><p>Products Traded</p></div>
+        </div>
+      </div>
+      <div class="col-lg-5 offset-lg-1 hero-visual" data-aos="fade-left" data-aos-delay="150">
+        <div class="hero-card-float">
+          <h5>🌤 Live Weather — Pune, MH</h5>
+          <div class="weather-mini">
+            <div class="temp">28°C</div>
+            <div><p>Partly Cloudy | Humidity 68%</p><p style="margin:0;font-size:.72rem;color:rgba(255,255,255,.5);">Wind 14km/h · UV Index 5</p></div>
+          </div>
+        </div>
+        <div class="hero-card-float">
+          <h5>🌾 Active Crop Sessions</h5>
+          <p>Wheat (Day 34) · Tomato (Day 12) · Sugarcane (Day 78)</p>
+        </div>
+        <div class="hero-card-float">
+          <h5>💰 Today's Market Price</h5>
+          <p>Wheat ₹2,275/q · Onion ₹1,890/q · Tomato ₹3,100/q &nbsp;<span class="pulse-dot"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FEATURES ═══════════════ -->
+<section id="features" style="background:var(--offwhite);">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label">Why AgriTechCulture?</div>
+      <h2 class="section-title">Everything a Farmer Needs,<br><span class="accent">In One Platform.</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="feature-card">
+          <div class="feat-icon green"><i class="fas fa-seedling"></i></div>
+          <h4>Crop Session Manager</h4>
+          <p>Track every crop from planting to harvest. Log dates, field details, inputs, and expected yield — all in one place.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+        <div class="feature-card">
+          <div class="feat-icon blue"><i class="fas fa-cloud-sun-rain"></i></div>
+          <h4>Weather Intelligence</h4>
+          <p>7-day hyper-local forecasts with crop-specific alerts. Know exactly when to irrigate, spray, or harvest.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+        <div class="feature-card">
+          <div class="feat-icon brown"><i class="fas fa-book-open"></i></div>
+          <h4>Cultivation Guides</h4>
+          <p>Step-by-step guides covering soil prep, sowing, irrigation, pest management, and post-harvest processing.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+        <div class="feature-card">
+          <div class="feat-icon yellow"><i class="fas fa-store"></i></div>
+          <h4>Farm Marketplace</h4>
+          <p>Buy seeds, fertilizers, tools and equipment. Sell your produce directly to buyers and get the best rates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CROP MANAGER ═══════════════ -->
+<section id="crop-manager">
+  <div class="container">
+    <div class="row align-items-center mb-5" data-aos="fade-up">
+      <div class="col">
+        <div class="section-label">Crop Session Manager</div>
+        <h2 class="section-title">Add & Track Your <span class="accent">Crop Sessions</span></h2>
+        <div class="divider-leaf"></div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="crop-form-wrap">
+          <h5 class="mb-4" style="font-family:'Playfair Display',serif;font-weight:700;color:var(--soil);">🌱 Add New Crop Session</h5>
+          <div class="mb-3">
+            <label class="form-label">Crop Type</label>
+            <select class="form-select" id="cropType">
+              <option value="">— Select Crop —</option>
+              <option>Wheat</option><option>Rice</option><option>Maize</option>
+              <option>Tomato</option><option>Onion</option><option>Potato</option>
+              <option>Sugarcane</option><option>Cotton</option><option>Soybean</option>
+              <option>Groundnut</option><option>Turmeric</option><option>Chilli</option>
+            </select>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="col-6">
+              <label class="form-label">Sowing Date</label>
+              <input type="date" class="form-control" id="sowDate"/>
+            </div>
+            <div class="col-6">
+              <label class="form-label">Field Area (acres)</label>
+              <input type="number" class="form-control" id="fieldArea" placeholder="e.g. 2.5"/>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Soil Type</label>
+            <select class="form-select" id="soilType">
+              <option value="">— Select Soil —</option>
+              <option>Black Cotton Soil</option><option>Red Soil</option>
+              <option>Alluvial Soil</option><option>Sandy Loam</option>
+              <option>Clay Soil</option><option>Laterite Soil</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Current Growth Stage</label>
+            <select class="form-select" id="growthStage">
+              <option>Seed / Germination</option>
+              <option>Seedling</option>
+              <option>Vegetative Growth</option>
+              <option>Flowering</option>
+              <option>Fruiting / Pod Formation</option>
+              <option>Maturation</option>
+              <option>Ready to Harvest</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label class="form-label">Notes (optional)</label>
+            <textarea class="form-control" id="cropNotes" rows="2" placeholder="e.g. Applied DAP fertiliser last week…"></textarea>
+          </div>
+          <button class="btn-add-crop" onclick="addCrop()"><i class="fas fa-plus me-2"></i>Add to Session</button>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 style="font-family:'Playfair Display',serif;font-weight:700;color:var(--soil);">📋 Active Sessions</h5>
+          <button class="btn btn-sm btn-outline-moss" onclick="clearCrops()">Clear All</button>
+        </div>
+        <div class="crop-table-wrap">
+          <table class="table table-hover" id="cropTable">
+            <thead>
+              <tr>
+                <th>Crop</th><th>Sown</th><th>Area</th><th>Soil</th><th>Stage</th><th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="cropBody">
+              <tr id="empty-row"><td colspan="6" class="text-center py-4" style="color:var(--muted);font-size:.88rem;">No sessions yet. Add your first crop above! 🌾</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mt-3 p-3" style="background:rgba(106,171,94,.08);border-radius:14px;border:1px solid rgba(106,171,94,.2);">
+          <small style="color:var(--muted);"><i class="fas fa-info-circle me-1" style="color:var(--moss);"></i>Sessions are saved in your browser. Track multiple crops across different fields simultaneously.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ WEATHER ═══════════════ -->
+<section id="weather">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label" style="color:var(--lime);">Weather Intelligence</div>
+      <h2 class="section-title" style="color:#fff;">Real-Time <span style="color:var(--lime);">Forecasts</span> for Your Farm</h2>
+    </div>
+    <div class="row g-3 mb-4" data-aos="fade-up">
+      <div class="col-lg-8">
+        <div class="row g-3">
+          <div class="col" data-aos="fade-up" data-aos-delay="0">
+            <div class="weather-card">
+              <div class="w-icon">☀️</div>
+              <div class="w-day">Today</div>
+              <div class="w-temp">28°C</div>
+              <div class="w-desc">Sunny</div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-delay="60">
+            <div class="weather-card">
+              <div class="w-icon">⛅</div>
+              <div class="w-day">Tue</div>
+              <div class="w-temp">26°C</div>
+              <div class="w-desc">Partly Cloudy</div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-delay="120">
+            <div class="weather-card">
+              <div class="w-icon">🌧️</div>
+              <div class="w-day">Wed</div>
+              <div class="w-temp">22°C</div>
+              <div class="w-desc">Light Rain</div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-delay="180">
+            <div class="weather-card">
+              <div class="w-icon">🌦️</div>
+              <div class="w-day">Thu</div>
+              <div class="w-temp">24°C</div>
+              <div class="w-desc">Showers</div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-delay="240">
+            <div class="weather-card">
+              <div class="w-icon">⛈️</div>
+              <div class="w-day">Fri</div>
+              <div class="w-temp">21°C</div>
+              <div class="w-desc">Thunderstorm</div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-delay="300">
+            <div class="weather-card">
+              <div class="w-icon">☀️</div>
+              <div class="w-day">Sat</div>
+              <div class="w-temp">30°C</div>
+              <div class="w-desc">Clear</div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-up" data-aos-delay="360">
+            <div class="weather-card">
+              <div class="w-icon">⛅</div>
+              <div class="w-day">Sun</div>
+              <div class="w-temp">29°C</div>
+              <div class="w-desc">Partly Cloudy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-left">
+        <div class="weather-card h-100" style="text-align:left;">
+          <h5 style="color:var(--lime);font-weight:700;margin-bottom:16px;"><i class="fas fa-map-marker-alt me-2"></i>Change Location</h5>
+          <div class="location-input-wrap mb-3">
+            <i class="fas fa-search"></i>
+            <input type="text" class="form-control" id="weatherLocation" placeholder="Enter city or district…"/>
+          </div>
+          <button class="btn-weather w-100 mb-4" onclick="updateWeatherCity()">Update Forecast</button>
+          <hr style="border-color:rgba(255,255,255,.15);">
+          <div style="font-size:.82rem;color:rgba(255,255,255,.6);">
+            <div class="d-flex justify-content-between mb-2"><span>💧 Humidity</span><strong style="color:#fff">68%</strong></div>
+            <div class="d-flex justify-content-between mb-2"><span>💨 Wind Speed</span><strong style="color:#fff">14 km/h</strong></div>
+            <div class="d-flex justify-content-between mb-2"><span>🌡 Feels Like</span><strong style="color:#fff">30°C</strong></div>
+            <div class="d-flex justify-content-between mb-2"><span>☁ Cloud Cover</span><strong style="color:#fff">35%</strong></div>
+            <div class="d-flex justify-content-between"><span>🌅 Sunrise / Sunset</span><strong style="color:#fff">6:10 / 18:52</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="weather-alert" data-aos="fade-up">
+      <i class="fas fa-exclamation-triangle" style="font-size:1.2rem;"></i>
+      <span><strong>⚠ Crop Alert:</strong> Heavy rain forecast Wednesday–Friday. Delay pesticide application. Ensure drainage channels are clear. Consider harvesting mature crops early.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CULTIVATION GUIDE ═══════════════ -->
+<section id="guide">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label">Step-by-Step</div>
+      <h2 class="section-title">Cultivation Journey:<br><span class="accent">Seed to Profitable Harvest</span></h2>
+      <div class="divider-leaf mx-auto"></div>
+    </div>
+
+    <!-- Crop Selector for Guide -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <select class="form-select d-inline-block w-auto px-4 py-2" id="guideSelect" onchange="updateGuide()" style="border-radius:20px;font-weight:600;border-color:var(--moss);">
+        <option value="wheat">🌾 Wheat</option>
+        <option value="rice">🌾 Rice</option>
+        <option value="tomato">🍅 Tomato</option>
+        <option value="onion">🧅 Onion</option>
+        <option value="cotton">🌿 Cotton</option>
+      </select>
+    </div>
+
+    <div id="guideSteps" class="timeline-wrap">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ MARKETPLACE ═══════════════ -->
+<section id="marketplace">
+  <div class="container">
+    <div class="row align-items-end mb-5" data-aos="fade-up">
+      <div class="col">
+        <div class="section-label">Farm Marketplace</div>
+        <h2 class="section-title">Buy Inputs. <span class="accent">Sell Produce.</span></h2>
+        <div class="divider-leaf"></div>
+      </div>
+      <div class="col-auto">
+        <input type="text" class="form-control" placeholder="🔍 Search products…" style="min-width:220px;border-radius:20px;" onkeyup="filterProducts(this.value)"/>
+      </div>
+    </div>
+
+    <div class="row g-4" id="productGrid">
+      <div class="col-md-6 col-lg-4 product-item" data-aos="fade-up" data-aos-delay="0">
+        <div class="product-card">
+          <div class="product-img seeds"><span>🌾</span><span class="product-badge">Best Seller</span></div>
+          <div class="product-body">
+            <h5>Hybrid Wheat Seeds</h5>
+            <p>High-yield certified variety. Resistant to rust & blight. 42–45 q/acre expected yield.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="product-price">₹480 <span>/ kg</span></div>
+              <button class="btn-buy" style="width:auto;padding:8px 18px;" onclick="addToCart('Hybrid Wheat Seeds')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 product-item" data-aos="fade-up" data-aos-delay="80">
+        <div class="product-card">
+          <div class="product-img tools"><span>🚜</span></div>
+          <div class="product-body">
+            <h5>Mini Power Tiller</h5>
+            <p>7 HP diesel tiller for small & medium fields. Low maintenance, high fuel efficiency.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="product-price">₹42,000 <span>/ unit</span></div>
+              <button class="btn-buy" style="width:auto;padding:8px 18px;" onclick="addToCart('Mini Power Tiller')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 product-item" data-aos="fade-up" data-aos-delay="160">
+        <div class="product-card">
+          <div class="product-img fert"><span>🪣</span><span class="product-badge">Organic</span></div>
+          <div class="product-body">
+            <h5>NPK Bio-Fertiliser</h5>
+            <p>Balanced 10-26-26 formula for fruiting crops. Boosts root strength & flower setting.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="product-price">₹320 <span>/ 50kg</span></div>
+              <button class="btn-buy" style="width:auto;padding:8px 18px;" onclick="addToCart('NPK Bio-Fertiliser')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 product-item" data-aos="fade-up" data-aos-delay="0">
+        <div class="product-card">
+          <div class="product-img pest"><span>🧴</span></div>
+          <div class="product-body">
+            <h5>Neem-Based Pesticide</h5>
+            <p>Broad-spectrum organic protection. Safe for bees and beneficial insects. 1L concentrate.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="product-price">₹210 <span>/ L</span></div>
+              <button class="btn-buy" style="width:auto;padding:8px 18px;" onclick="addToCart('Neem Pesticide')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 product-item" data-aos="fade-up" data-aos-delay="80">
+        <div class="product-card">
+          <div class="product-img water"><span>💧</span><span class="product-badge">New</span></div>
+          <div class="product-body">
+            <h5>Drip Irrigation Kit</h5>
+            <p>Complete set for 1 acre. Saves 60% water. Includes emitters, main line & filter unit.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="product-price">₹8,500 <span>/ acre kit</span></div>
+              <button class="btn-buy" style="width:auto;padding:8px 18px;" onclick="addToCart('Drip Irrigation Kit')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 product-item" data-aos="fade-up" data-aos-delay="160">
+        <div class="product-card">
+          <div class="product-img organic"><span>🌿</span></div>
+          <div class="product-body">
+            <h5>Vermicompost (Premium)</h5>
+            <p>Pure earthworm castings. Improves soil structure, microbial activity, and water retention.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="product-price">₹18 <span>/ kg</span></div>
+              <button class="btn-buy" style="width:auto;padding:8px 18px;" onclick="addToCart('Vermicompost')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sell CTA -->
+    <div class="row mt-5" data-aos="fade-up">
+      <div class="col-lg-6">
+        <div class="sell-cta-box">
+          <h3>🧑‍🌾 Sell Your Produce</h3>
+          <p>List your harvest on AgriTechCulture and connect with direct buyers, FPOs, and processors. No middlemen — get the best market rates delivered to your account.</p>
+          <button class="btn-sell" onclick="showSellModal()"><i class="fas fa-plus-circle me-2"></i>List Your Product</button>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-lg-0 mt-4">
+        <div class="p-4 h-100" style="background:var(--card-bg);border:1.5px solid var(--border);border-radius:24px;">
+          <h5 style="font-family:'Playfair Display',serif;font-weight:700;color:var(--soil);margin-bottom:16px;">📈 Today's Mandi Prices</h5>
+          <table class="table table-sm mb-0">
+            <thead style="font-size:.78rem;color:var(--muted);">
+              <tr><th>Crop</th><th>Min (₹/q)</th><th>Max (₹/q)</th><th>Modal</th></tr>
+            </thead>
+            <tbody style="font-size:.88rem;">
+              <tr><td>Wheat</td><td>2,150</td><td>2,350</td><td style="color:var(--moss);font-weight:600;">2,275</td></tr>
+              <tr><td>Onion</td><td>1,700</td><td>2,050</td><td style="color:var(--moss);font-weight:600;">1,890</td></tr>
+              <tr><td>Tomato</td><td>2,800</td><td>3,400</td><td style="color:var(--moss);font-weight:600;">3,100</td></tr>
+              <tr><td>Rice</td><td>1,900</td><td>2,200</td><td style="color:var(--moss);font-weight:600;">2,060</td></tr>
+              <tr><td>Soybean</td><td>4,200</td><td>4,700</td><td style="color:var(--moss);font-weight:600;">4,450</td></tr>
+            </tbody>
+          </table>
+          <small style="color:var(--muted);"><i class="fas fa-clock me-1"></i>Last updated: Today 9:00 AM — APMC Pune</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PROFIT CALCULATOR ═══════════════ -->
+<section id="calculator">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label">Profit Estimator</div>
+      <h2 class="section-title">Calculate Your <span class="accent">Expected Profit</span></h2>
+      <div class="divider-leaf mx-auto"></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8" data-aos="fade-up">
+        <div class="calc-card">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <label class="form-label">Crop Type</label>
+              <select class="form-select" id="calcCrop" onchange="calcProfit()">
+                <option value="wheat">Wheat</option><option value="rice">Rice</option>
+                <option value="tomato">Tomato</option><option value="onion">Onion</option>
+                <option value="soybean">Soybean</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Field Area: <strong id="areaVal">2</strong> acres</label>
+              <input type="range" min="0.5" max="20" step="0.5" value="2" id="calcArea" oninput="document.getElementById('areaVal').textContent=this.value;calcProfit()"/>
+              <div class="range-label"><span>0.5 acre</span><span>20 acres</span></div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Yield (q/acre): <strong id="yieldVal">35</strong></label>
+              <input type="range" min="10" max="80" step="1" value="35" id="calcYield" oninput="document.getElementById('yieldVal').textContent=this.value;calcProfit()"/>
+              <div class="range-label"><span>10</span><span>80</span></div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Input Cost (₹/acre): <strong id="costVal">12000</strong></label>
+              <input type="range" min="2000" max="50000" step="500" value="12000" id="calcCost" oninput="document.getElementById('costVal').textContent=parseInt(this.value).toLocaleString('en-IN');calcProfit()"/>
+              <div class="range-label"><span>₹2,000</span><span>₹50,000</span></div>
+            </div>
+            <div class="col-12">
+              <div class="row g-3 calc-result">
+                <div class="col-4 text-center border-end" style="border-color:rgba(74,124,89,.2)!important;">
+                  <div style="font-size:.78rem;color:var(--muted);margin-bottom:4px;">Total Revenue</div>
+                  <div class="result-num" id="revenueOut">₹0</div>
+                </div>
+                <div class="col-4 text-center border-end" style="border-color:rgba(74,124,89,.2)!important;">
+                  <div style="font-size:.78rem;color:var(--muted);margin-bottom:4px;">Total Cost</div>
+                  <div class="result-num" style="color:var(--bark);" id="costOut">₹0</div>
+                </div>
+                <div class="col-4 text-center">
+                  <div style="font-size:.78rem;color:var(--muted);margin-bottom:4px;">Net Profit</div>
+                  <div class="result-num" id="profitOut">₹0</div>
+                </div>
+              </div>
+              <p id="profitAdvice" class="text-center mt-3 mb-0" style="font-size:.88rem;color:var(--muted);"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TIPS ═══════════════ -->
+<section id="tips">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label">Expert Advice</div>
+      <h2 class="section-title">Farming Tips & <span class="accent">Best Practices</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="tip-card"><div class="tip-season">Soil Health</div><h5>Test Your Soil Before Every Season</h5><p>Conduct NPK and pH testing 3–4 weeks before sowing. This saves up to 30% on fertiliser costs and ensures optimal crop nutrition from day one.</p></div>
+        <div class="tip-card"><div class="tip-season">Irrigation</div><h5>Irrigate at the Right Crop Stage</h5><p>Critical irrigation windows: germination, tillering/branching, flowering, and grain filling. Missing these reduces yield by 25–40%.</p></div>
+        <div class="tip-card"><div class="tip-season">Pest Management</div><h5>Integrated Pest Management (IPM)</h5><p>Combine biological controls, resistant varieties, and chemical inputs as a last resort. IPM can cut pesticide costs by 50% while preserving soil biodiversity.</p></div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="tip-card"><div class="tip-season">Post-Harvest</div><h5>Reduce Post-Harvest Losses</h5><p>Proper drying (to 12–14% moisture), storage in ventilated bags, and temperature control can reduce losses from 20–30% down to under 5%.</p></div>
+        <div class="tip-card"><div class="tip-season">Market Timing</div><h5>Time Your Market Entry</h5><p>Prices typically rise 3–6 weeks after peak arrival season. If you have storage, hold back 20–30% of produce to capitalise on off-peak pricing.</p></div>
+        <div class="tip-card"><div class="tip-season">Crop Rotation</div><h5>Practice Smart Crop Rotation</h5><p>Rotate cereals with legumes every 2nd season. Legumes fix atmospheric nitrogen (150–200 kg N/ha), reducing fertiliser costs significantly for the next crop.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="py-5">
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-lg-4">
+        <div class="footer-brand mb-3">🌿 Agri<span>Tech</span>Culture</div>
+        <p style="font-size:.88rem;line-height:1.7;color:rgba(255,255,255,.55);">Empowering Indian farmers with technology, knowledge and market access to build sustainable, profitable farms for generations.</p>
+        <div class="mt-3">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <h6>Platform</h6>
+        <a href="#crop-manager">Crop Manager</a>
+        <a href="#weather">Weather</a>
+        <a href="#guide">Cultivation Guide</a>
+        <a href="#marketplace">Marketplace</a>
+        <a href="#calculator">Profit Calculator</a>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <h6>Resources</h6>
+        <a href="#">Crop Calendar</a>
+        <a href="#">Soil Testing Guide</a>
+        <a href="#">Government Schemes</a>
+        <a href="#">Mandi Prices</a>
+        <a href="#">FPO Registration</a>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <h6>Support</h6>
+        <a href="#">Help Center</a>
+        <a href="#">Kisan Helpline</a>
+        <a href="#">Video Tutorials</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <h6>Languages</h6>
+        <a href="#">हिन्दी</a>
+        <a href="#">मराठी</a>
+        <a href="#">తెలుగు</a>
+        <a href="#">ಕನ್ನಡ</a>
+        <a href="#">English</a>
+      </div>
+    </div>
+    <hr class="divider"/>
+    <div class="d-flex flex-wrap justify-content-between align-items-center pt-3">
+      <p style="font-size:.82rem;color:rgba(255,255,255,.35);margin:0;">© 2025 AgriTechCulture. Built for India's Farmers.</p>
+      <p style="font-size:.82rem;color:rgba(255,255,255,.35);margin:0;">Privacy Policy · Terms of Service · Disclaimer</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════ TOAST ═══════════════ -->
+<div class="notification-toast" id="toastArea"></div>
+
+<!-- ═══════════════ SELL MODAL ═══════════════ -->
+<div class="modal fade" id="sellModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border-radius:20px;border:none;">
+      <div class="modal-header" style="background:var(--moss);border-radius:20px 20px 0 0;border:none;">
+        <h5 class="modal-title text-white fw-bold">🌾 List Your Produce</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="mb-3"><label class="form-label">Produce Type</label><input type="text" class="form-control" placeholder="e.g. Wheat, Tomato, Onion…"/></div>
+        <div class="row g-3 mb-3">
+          <div class="col-6"><label class="form-label">Quantity (quintals)</label><input type="number" class="form-control" placeholder="e.g. 50"/></div>
+          <div class="col-6"><label class="form-label">Asking Price (₹/q)</label><input type="number" class="form-control" placeholder="e.g. 2200"/></div>
+        </div>
+        <div class="mb-3"><label class="form-label">Location</label><input type="text" class="form-control" placeholder="Village, District, State"/></div>
+        <div class="mb-3"><label class="form-label">Contact Number</label><input type="tel" class="form-control" placeholder="+91 XXXXXXXXXX"/></div>
+        <div class="mb-3"><label class="form-label">Description</label><textarea class="form-control" rows="2" placeholder="Grade, moisture %, harvest date…"></textarea></div>
+      </div>
+      <div class="modal-footer border-0 px-4 pb-4">
+        <button type="button" class="btn-add-crop" onclick="submitListing()">Submit Listing</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SCRIPTS ═══════════════ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+how many programming languages are ther in it
